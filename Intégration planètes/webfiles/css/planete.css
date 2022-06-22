@@ -1,0 +1,223 @@
+* {
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+* a:hover {
+  text-decoration: underline;
+  color: antiquewhite;
+}
+* li {
+  list-style: none;
+}
+
+header {
+  max-width: 100%;
+  background-color: #1B2430;
+}
+header nav div {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav div img {
+  object-fit: contain;
+  max-height: 50px;
+  margin: 0;
+}
+header nav div ul {
+  display: flex;
+  margin: 0;
+}
+header nav div ul li a {
+  padding: 2rem 1rem;
+  color: #FFFFFF;
+  display: block;
+}
+header .imageEnTete {
+  width: 100%;
+  max-height: 300px;
+}
+
+main {
+  background-color: #F6F6F6;
+}
+main article {
+  max-width: 1200px;
+  max-height: 100%;
+  display: flex;
+  text-align: justify;
+  padding: 1rem;
+}
+main article p {
+  margin: 0.5rem 0;
+}
+main article p span {
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+main article p span:first-of-type {
+  margin-right: 0.5rem;
+  background-color: #816797;
+}
+main article p span:last-of-type {
+  background-color: #1B2430;
+  color: #FFFFFF;
+}
+main article img {
+  width: 100%;
+  object-fit: contain;
+}
+main article div {
+  padding: 0 1rem;
+  margin: 0;
+}
+main article:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+main .ceinture {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  position: relative;
+  max-width: 1200px;
+}
+main .ceinture:before, main .ceinture::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 40%;
+  background-color: #1B2430;
+}
+main .ceinture:before {
+  left: 0;
+}
+main .ceinture:after {
+  right: 0;
+}
+
+footer {
+  background-color: #1B2430;
+  text-align: center;
+  color: #FFFFFF;
+}
+footer nav {
+  max-width: 1200px;
+  display: flex;
+  padding-top: 2rem;
+}
+footer nav div {
+  text-align: center;
+}
+footer nav div p {
+  text-align: center;
+}
+footer nav div ul {
+  padding: 2rem;
+}
+footer nav div:nth-of-type(2) {
+  border-right: #FFFFFF 3px solid;
+  border-left: #FFFFFF 3px solid;
+  width: 34%;
+}
+footer nav a {
+  color: #FFFFFF;
+}
+footer .dernierp {
+  max-width: 1200px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-top: #FFFFFF solid 1px;
+}
+footer .dernierp a {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  header {
+    background-color: maroon;
+    margin: 0 auto;
+  }
+  header nav {
+    max-width: 1024px;
+  }
+  header nav div img {
+    padding: 0.5rem 0;
+    margin: 0;
+  }
+  header nav div ul li a {
+    padding: 0.5rem 1rem;
+  }
+  main article img {
+    width: 50%;
+  }
+  footer nav {
+    max-width: 1024px;
+  }
+  footer nav div {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 1rem;
+  }
+  header {
+    background-color: green;
+  }
+  header nav {
+    max-width: 768px;
+    text-align: center;
+  }
+  header nav div {
+    display: flex;
+  }
+  header nav div img {
+    padding: 0.5rem 0.5rem;
+  }
+  header nav div ul {
+    flex-direction: column;
+  }
+  header nav div ul li a {
+    padding: 0.3rem 0;
+  }
+  main article {
+    width: fit-content;
+    border: 2px solid greenyellow;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem 0.5rem;
+  }
+  main article img {
+    width: 50%;
+    display: block;
+  }
+  main .reverse {
+    flex-direction: column-reverse;
+  }
+  main .ceinture::before, main .ceinture::after {
+    display: none;
+  }
+  footer nav {
+    flex-direction: column;
+  }
+  footer nav div {
+    border-right: #FFFFFF 3px solid;
+    border-left: #FFFFFF 3px solid;
+    width: 34%;
+    padding: 0;
+  }
+  footer nav div p {
+    padding: 1rem 0 0 0;
+  }
+  footer nav div ul {
+    padding: 0.5rem 0 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=planete.css.map */
