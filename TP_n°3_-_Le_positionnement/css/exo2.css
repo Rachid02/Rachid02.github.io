@@ -1,0 +1,98 @@
+/* TABLE DES STYLES */
+/*                  */
+/* GLOBALS          */
+/* HEADER & NAV     */
+/* MAIN             */
+/*                  */
+/*                  */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    margin: auto;
+}
+
+h1,h2{
+    margin: 40px 0;
+}
+
+/* Header */
+header{
+    background-color: black;
+    margin: 0;
+}
+
+header, header nav a{
+    color: white;
+}
+
+header nav{
+    margin-bottom: 80px;
+    max-width: 1150px;
+    margin: 0 auto;
+    height: 50px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header nav, header nav a{
+    display: block;
+}
+
+header nav img, header nav ul{
+    width: fit-content;
+    border: solid 2px white;
+}
+
+header nav img{
+    float: left;
+    width: 50px;
+    background-color: rgb(86, 236, 111);
+}
+
+header nav ul{
+    float: right;
+    text-align: right;
+}
+
+header nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+header nav a{
+    padding: 15px 30px;
+}
+
+ /* Main */
+main{
+    max-width: 1150px;
+    margin: auto;
+}
+
+main .text{
+    text-align: justify;
+}
+
+main img{
+    width: 300px;
+    font-size: 0;
+}
+
+main .imageFlottanteDroite{
+    float: right;
+    margin-left: 30px;
+}
+
+main .imageFlottanteGauche{
+    float: left;
+    margin-right: 30px;
+}
+
+main .imageFlottanteDroite, main .imageFlottanteGauch{
+    margin-bottom: 15px;
+}
